@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<link rel = "stylesheet" type = "text/css" href = "style.css" />
+<head>
+	<title>Home</title>
+  <meta name="description" content="Roshan Adhikari's Portfolio">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Roshan Adhikari">
+</head>
+    <body>
+      <div class = "title">
+        <div class="titlelogo">
+          <img class="logo" src="logo.png">
+        </div>
+      	<div class="titleinfo">
+      		<h1>ROSHAN ADHIKARI</h1>
+      	</div>
+      </div>
+      <!-- Navigation Starts here -->
+    	<div class="navigationbar">
+    		  <a class="active" href="home.html">Home</a>
+    		  <a href="cv.html">Curriculam Vita</a>
+    		  <a href="blog.html">Blog</a>
+    		  <a href="research.html">Research</a>
+    		  <a href="contactus.html">Contact Us</a>
+    	</div>
+      <!-- Navigation ends here -->
+
+      <!-- slider image starts here -->
+      <div class="center">
+        <div>
+          <div id="img">
+            <img class="sliderimage" src="b.jpg">
+          </div>
+        </div>
+      </div>
+    	<div class="homebody">
+      		<div class="homebox homeboxleft homeboxlefttop">
+      		  <a href="cv.html">
+              <h2>Curriculam Vita</h2>
+            </a>
+      		  <h3> Profile </h3>
+            <h3>Eductaion</h3>
+            <h3>Skills</h3>
+            <h3>Hobbies</h3>
+            <h3>Work Experience</h3>
+      		</div>
+
+      		<div class="homebox homeboxright">
+      		  <a href="blog.html"><h2>Blog</h2></a>
+      		  <h3> Internet Technology</h3>
+      		  	<p></p>
+      		  <h3>Positive Impact</h3>
+              <p></p>
+            <h3>Negative Impact</h3>
+              <p></p>
+            <h3>Conclusion</h3>    
+      		</div>
+      		<div class="homebox homeboxleft">
+      		  <a href="research.html"><h2>Research</h2></a>
+      		  <h3>w3schools</h3>
+            <h3>icchh.org</h3>
+            <h3>wix.com</h3>
+      		</div>
+
+      		<div class="homebox homeboxright homeboxrightbottom">
+      		  <a href="contactus.html"><h2>Contact Us</h2></a>
+      		  <h3>9861320388</h3>
+      		  <h3>roshanadh57@gmail.com</h3>
+      		</div>	
+	     </div>
+       <div>
+         <center>
+          <!-- footer starts here -->
+           <footer>
+              <p> Copyright © 2020. Contact information: <a href="mailto:roshanadh57@gmail.com">roshanadh57@gmail.com</a></p>
+           </footer>
+         </center>
+       </div>  
+    </body>
+
+    <script>
+              var images = ['b.jpg', 'd.jpg', 'e.jpg'];
+              var x = 0;
+              var imgs = document.getElementById('img');
+              setInterval(slider, 3000);
+              function slider() {
+                if (x < images.length) {
+                  x = x + 1;
+                } else {
+                  x = 1;
+                }
+                imgs.innerHTML = "<img class='sliderimage'  src=" + images[x - 1] + ">";
+              }
+    </script>
+</html>

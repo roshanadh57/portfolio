@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<link rel = "stylesheet" type = "text/css" href = "style.css" />
+<head>
+	<title>Contact</title>
+	<meta name="description" content="Roshan Adhikari's Portfolio">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Roshan Adhikari">
+</head>
+<body>
+	<div class = "title">
+        <div class="titlelogo">
+          <img class="logo" src="logo.png">
+        </div>
+      	<div class="titleinfo">
+      		<h1>ROSHAN ADHIKARI</h1>
+      	</div>
+    </div>
+
+	<div class="navigationbar">
+		  <a href="home.html">Home</a>
+		  <a href="cv.html">Curriculam Vita</a>
+		  <a href="blog.html">Blog</a>
+		  <a href="research.html">Research</a>
+		  <a class="active" href="contactus.html">Contact Us</a>
+	</div>
+
+	<div class="contactbox">
+		<div class="contactinfo">
+			<div>
+				<h1>Contact</h1>
+				<h2>Reach Me AnyTime</h2>
+				<p>Feel Free to contact me:<br>Syuchatar,Kalanki<br>9861320388</p>
+				<a href="mailto:roshanadh57@gmail.com">roshanadh57@gmail.com</a>
+			</div>
+			<img class="contactpic" src="roshan.jpg">
+		</div>
+		<!-- form starts here -->
+		<center>
+			<div class="contactformbox">
+				<form 	name="messageForm" onsubmit="validateForm()">
+					<p>First name: <input type="text" name="firstname"></p>
+					<p>Last name: <input type="text" name="lastname"></p>
+					<p>Email : &nbsp &nbsp  &nbsp &nbsp<input type="email" name="email"></p>
+					<p>Gender: <input type="radio" name="gender" value="male" checked>Male
+						<input type="radio" name="gender" value="female">Female</p>
+					<p>Message: <br><textarea name="message" rows="10" cols="30" placeholder="Enter Message"></textarea></p>
+					<p><input type="submit" name="Send"></p>
+				</form>
+			</div>
+		</center>
+		<!-- form ends here -->
+	</div>
+
+	<div>
+	  <center>
+	    <footer>
+	       <p> Copyright © 2020. Contact information: <a href="mailto:roshanadh57@gmail.com">roshanadh57@gmail.com</a></p>
+	    </footer>
+	  </center>
+	</div> 
+	<script src="script.js">
+	
+</script>
+</body>
+</html>

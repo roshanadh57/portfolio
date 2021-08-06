@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<link rel = "stylesheet" type = "text/css" href = "style.css" />
+<head>
+	<title>CV</title>
+	<meta name="description" content="Roshan Adhikari's Portfolio">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Roshan Adhikari">
+</head>
+<body>	
+	<div class = "title">
+        <div class="titlelogo">
+          <img class="logo" src="logo.png">
+        </div>
+      	<div class="titleinfo">
+      		<h1>ROSHAN ADHIKARI</h1>
+      	</div>
+    </div>
+    <!-- navigation bar starts here -->
+	<div class="navigationbar">
+		  <a href="home.html">Home</a>
+		  <a class="active" href="cv.html">Curriculam Vita</a>
+		  <a href="blog.html">Blog</a>
+		  
+		  <a href="contactus.html">Contact Us</a>
+	</div>
+	<!-- navigation bar ends here -->
+	<!-- table starts here -->
+	<div>
+		<table class = "cvtable">
+			<tr>
+				<th class="cvtablerowleft">
+					<div class="cvimage">
+							<img src="a.jpg" class="myprofilepic">
+					</div>
+				</th>
+				<th class="cvtablerowright">
+					<div class="cvdesc">
+						<p><br>Hello, <br>I'm ROSHAN ADHIKARI.</p>
+					</div>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<!-- table ends here -->
+		<div class= "cvsection">
+		<button class="accordion">About me</button>
+			<div class="cvjsdecs">
+				<p>I am an energetic,ambitious and hardworking student with a great passion for the IT field and Bussiness.I am currently in my first year studying IT at Islington College.I have excellent communication skills which make me able to communicate with a wide range of people.</p>
+			</div>
+		</div>
+	<div  class="cvsection">
+		<button class="accordion">Education</button>
+		<div class="cvjsdecs">
+			<p>I started studying from 2003 in Bhrikuti secondary school.<br>2004-2007 in Small heaven School.<br>2012-SLC Passed from Little Angel School.<br>2014-+2 Passed Trinity International College.<br>2016-Curently studying at Islington College.</p>
+		</div>
+	</div>
+
+	<div class="cvsection">
+		<button class="accordion">Skills</button>
+		<div class="cvjsdecs">
+			<p>Communication.<br>Team Work<br>Problem solving<br></p>
+		</div>
+	</div>
+
+	<div class="cvsection">
+		<button class="accordion">Hobbies and Interest.</button>
+		<div class="cvjsdecs">
+			<p>Travel to different places in Nepal.<br>Soccer.<br>Computing.</p>
+		</div>
+	</div>
+
+	<div class="cvsection">
+		<button class="accordion">Work Experience.</button>
+		<div class="cvjsdecs">
+			<p>Worked as a full time customer service in a company.<br>Organized company in efficent way.</p>
+		</div>
+	</div>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var accnext = this.nextElementSibling;
+		    if (accnext.style.display === "block") {	
+		      accnext.style.display = "none";
+		    } else {
+		      accnext.style.display = "block";
+		    }
+		  });
+		}
+	</script>
+	<div>
+	  <center>
+	    <footer>
+	       <p> Copyright © 2020. Contact information: <a href="mailto:roshanadh57@gmail.com">roshanadh57@gmail.com</a></p>
+	    </footer>
+	  </center>
+	</div> 
+</body>
+</html>
